@@ -1919,7 +1919,8 @@ section { padding: 5rem 0; }
 
 .company-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
 
-.company-logo-card {
+.company-logo-card,
+.company-logo-lg {
   width: 64px;
   height: 64px;
   border-radius: var(--radius-sm);
