@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Knowledge Center - Campus Link Blog</title>
+  <meta name="description" content="Insights, tips, and stories for the modern university student in Kenya. Study tips, career advice, tech, and success stories.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo"><i class="fas fa-graduation-cap"></i> Campus Link</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="resources.html" class="nav-link">Resources</a></li>
+        <li><a href="careers.html" class="nav-link">Careers</a></li>
+        <li><a href="networking.html" class="nav-link">Networking</a></li>
+        <li><a href="companies.html" class="nav-link">Companies</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="help.html" class="nav-link">Help</a></li>
+      </ul>
+      <div class="nav-auth" id="navAuth">
+        <button class="btn btn-outline" id="loginBtn">Login</button>
+        <button class="btn btn-primary" id="signupBtn">Sign Up</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="page-hero" style="padding:5rem 0 4rem;">
+    <div class="page-hero-content">
+      <div class="badge badge-primary mb-3"><i class="fas fa-pen-nib"></i> Knowledge Center</div>
+      <h1>Insights &amp; Stories</h1>
+      <p>Tips, advice, and inspiration for the modern Kenyan university student</p>
+
+      <!-- CATEGORY FILTERS -->
+      <div class="category-filters" style="margin-top:2rem;">
+        <button class="category-btn active" data-category="all">All</button>
+        <button class="category-btn" data-category="study-tips">Study Tips</button>
+        <button class="category-btn" data-category="productivity">Productivity</button>
+        <button class="category-btn" data-category="career-advice">Career Advice</button>
+        <button class="category-btn" data-category="technology">Technology</button>
+        <button class="category-btn" data-category="success-stories">Success Stories</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN BLOG LAYOUT -->
+  <section style="background:var(--gray-50);">
+    <div class="container">
+
+      <!-- FEATURED POST -->
+      <div class="featured-post animate-on-scroll">
+        <div class="featured-post-img">
+          <div style="width:100%;height:100%;background:linear-gradient(135deg,#4f46e5 0%,#7c3aed 50%,#06b6d4 100%);display:flex;align-items:center;justify-content:center;color:white;font-size:4rem;">
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+        <div class="featured-post-content">
+          <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1rem;">
+            <span class="badge badge-primary">Success Stories</span>
+            <span style="font-size:0.8rem;color:var(--gray-400);">Featured Story</span>
+          </div>
+          <h2>How 5 Kenyan Students Landed Internships at Top Tech Companies</h2>
+          <p style="color:var(--gray-500);line-height:1.7;margin:1rem 0;">Five ordinary Kenyan university students who used Campus Link's resources, networking features, and career tools to land extraordinary internships at some of the world's most prestigious tech companies. Here's their story and the exact steps they took.</p>
+          <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1.5rem;">
+            <div style="width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#4f46e5,#7c3aed);display:flex;align-items:center;justify-content:center;color:white;font-size:0.75rem;font-weight:700;">CL</div>
+            <div>
+              <div style="font-size:0.875rem;font-weight:600;color:var(--gray-900);">Campus Link Team</div>
+              <div style="font-size:0.8rem;color:var(--gray-400);">March 20, 2024 · 12 min read</div>
+            </div>
+          </div>
+          <a href="#" class="btn btn-primary"><i class="fas fa-book-open"></i> Read Full Story</a>
+        </div>
+      </div>
+
+      <!-- BLOG GRID + SIDEBAR -->
+      <div class="blog-layout">
+
+        <!-- BLOG GRID -->
+        <div class="blog-grid" id="blogGrid">
+          <article class="blog-card animate-on-scroll" data-category="study-tips">
+            <div class="blog-card-img" style="background:linear-gradient(135deg,#4f46e5,#7c3aed);">
+              <i class="fas fa-brain"></i>
+            </div>
+            <div class="blog-card-content">
+              <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.6rem;">
+                <span class="badge badge-primary">Study Tips</span>
+                <span style="font-size:0.75rem;color:var(--gray-400);">5 min read</span>
+              </div>
+              <h3>10 Study Hacks That Actually Work for University Students</h3>
+              <p>Evidence-backed study techniques specifically adapted for the Kenyan university environment. From spaced repetition to the Pomodoro technique.</p>
+              <div class="blog-card-footer">
+                <div class="author-mini">
+                  <div style="width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,#06b6d4,#0891b2);display:flex;align-items:center;justify-content:center;color:white;font-size:0.65rem;font-weight:700;">WK</div>
+                  <span>Wanjiru K.</span>
+                </div>
+                <span>March 18, 2024</span>
+              </div>
+            </div>
+          </article>
+          <article class="blog-card animate-on-scroll" data-category="productivity">
+            <div class="blog-card-img" style="background:linear-gradient(135deg,#06b6d4,#0891b2);">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <div class="blog-card-content">
+              <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.6rem;">
+                <span class="badge badge-secondary">Productivity</span>
+                <span style="font-size:0.75rem;color:var(--gray-400);">4 min read</span>
+              </div>
+              <h3>Top 5 Productivity Apps for University Students in 2024</h3>
+              <p>The best apps to manage your coursework, deadlines, and social life without losing your mind — reviewed from a Kenyan student perspective.</p>
+              <div class="blog-card-footer">
+                <div class="author-mini">
+                  <div style="width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,#4f46e5,#7c3aed);display:flex;align-items:center;justify-content:center;color:white;font-size:0.65rem;font-weight:700;">BO</div>
+                  <span>Brian O.</span>
+                </div>
+                <span>March 15, 2024</span>
+              </div>
+            </div>
+          </article>
+          <article class="blog-card animate-on-scroll" data-category="career-advice">
+            <div class="blog-card-img" style="background:linear-gradient(135deg,#10b981,#059669);">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <div class="blog-card-content">
+              <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.6rem;">
+                <span class="badge badge-success">Career Advice</span>
+                <span style="font-size:0.75rem;color:var(--gray-400);">8 min read</span>
+              </div>
+              <h3>How to Ace Technical Interviews at Top Kenyan Companies</h3>
+              <p>A complete guide to technical interview preparation for Safaricom, KCB, Google, and other top employers — from someone who's been through it.</p>
+              <div class="blog-card-footer">
+                <div class="author-mini">
+                  <div style="width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,#10b981,#059669);display:flex;align-items:center;justify-content:center;color:white;font-size:0.65rem;font-weight:700;">DM</div>
+                  <span>David M.</span>
+                </div>
+                <span>March 12, 2024</span>
+              </div>
+            </div>
+          </article>
+          <article class="blog-card animate-on-scroll" data-category="technology">
+            <div class="blog-card-img" style="background:linear-gradient(135deg,#f59e0b,#d97706);">
+              <i class="fas fa-robot"></i>
+            </div>
+            <div class="blog-card-content">
+              <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.6rem;">
+                <span class="badge badge-warning">Technology</span>
+                <span style="font-size:0.75rem;color:var(--gray-400);">10 min read</span>
+              </div>
+              <h3>Introduction to Machine Learning for Absolute Beginners</h3>
+              <p>No Math PhD required. A clear, practical introduction to machine learning concepts and how you can start learning AI skills as a Kenyan student.</p>
+              <div class="blog-card-footer">
+                <div class="author-mini">
+                  <div style="width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,#8b5cf6,#6d28d9);display:flex;align-items:center;justify-content:center;color:white;font-size:0.65rem;font-weight:700;">KO</div>
+                  <span>Kevin O.</span>
+                </div>
+                <span>March 10, 2024</span>
+              </div>
+            </div>
+          </article>
+          <article class="blog-card animate-on-scroll" data-category="success-stories">
+            <div class="blog-card-img" style="background:linear-gradient(135deg,#8b5cf6,#6d28d9);">
+              <i class="fas fa-globe"></i>
+            </div>
+            <div class="blog-card-content">
+              <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.6rem;">
+                <span class="badge badge-primary">Success Stories</span>
+                <span style="font-size:0.75rem;color:var(--gray-400);">7 min read</span>
+              </div>
+              <h3>From UoN to Silicon Valley: A Graduate's Journey</h3>
+              <p>How a University of Nairobi CS graduate navigated the complex path from a Kenyan university to landing a job at a top Silicon Valley tech company.</p>
+              <div class="blog-card-footer">
+                <div class="author-mini">
+                  <div style="width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,#f59e0b,#d97706);display:flex;align-items:center;justify-content:center;color:white;font-size:0.65rem;font-weight:700;">AH</div>
+                  <span>Amira H.</span>
+                </div>
+                <span>March 5, 2024</span>
+              </div>
+            </div>
+          </article>
+          <article class="blog-card animate-on-scroll" data-category="study-tips">
+            <div class="blog-card-img" style="background:linear-gradient(135deg,#ef4444,#dc2626);">
+              <i class="fas fa-heart"></i>
+            </div>
+            <div class="blog-card-content">
+              <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.6rem;">
+                <span class="badge badge-danger">Study Tips</span>
+                <span style="font-size:0.75rem;color:var(--gray-400);">6 min read</span>
+              </div>
+              <h3>Managing Exam Stress: A Practical Guide for Kenyan Students</h3>
+              <p>Proven psychological and practical techniques to manage exam anxiety, maintain mental health, and perform at your best when it matters most.</p>
+              <div class="blog-card-footer">
+                <div class="author-mini">
+                  <div style="width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,#06b6d4,#0891b2);display:flex;align-items:center;justify-content:center;color:white;font-size:0.65rem;font-weight:700;">SK</div>
+                  <span>Sarah K.</span>
+                </div>
+                <span>March 1, 2024</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- SIDEBAR -->
+        <aside class="blog-sidebar">
+
+          <!-- Popular Posts -->
+          <div class="sidebar-widget">
+            <h3><i class="fas fa-fire" style="color:#ef4444;margin-right:0.5rem;"></i>Popular Posts</h3>
+            <div class="popular-posts">
+              <a href="#" class="popular-post">
+                <span class="popular-num">1</span>
+                <div>
+                  <p>How 5 Students Landed Internships at Top Tech Companies</p>
+                  <span>12 min read · 4.2K views</span>
+                </div>
+              </a>
+              <a href="#" class="popular-post">
+                <span class="popular-num">2</span>
+                <div>
+                  <p>Top Skills Employers Look for in 2024</p>
+                  <span>7 min read · 3.1K views</span>
+                </div>
+              </a>
+              <a href="#" class="popular-post">
+                <span class="popular-num">3</span>
+                <div>
+                  <p>10 Study Hacks That Actually Work</p>
+                  <span>5 min read · 2.8K views</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Tags -->
+          <div class="sidebar-widget">
+            <h3><i class="fas fa-tags" style="color:var(--primary);margin-right:0.5rem;"></i>Topics</h3>
+            <div class="tags-cloud">
+              <a href="#" class="tag-pill">Study Tips</a>
+              <a href="#" class="tag-pill">Career</a>
+              <a href="#" class="tag-pill">Technology</a>
+              <a href="#" class="tag-pill">Scholarships</a>
+              <a href="#" class="tag-pill">Internships</a>
+              <a href="#" class="tag-pill">Productivity</a>
+              <a href="#" class="tag-pill">Leadership</a>
+              <a href="#" class="tag-pill">Research</a>
+              <a href="#" class="tag-pill">Finance</a>
+              <a href="#" class="tag-pill">Networking</a>
+            </div>
+          </div>
+
+          <!-- Newsletter -->
+          <div class="sidebar-widget">
+            <h3><i class="fas fa-envelope" style="color:var(--primary);margin-right:0.5rem;"></i>Newsletter</h3>
+            <p style="font-size:0.875rem;color:var(--gray-500);margin-bottom:1rem;">Get the best articles, scholarships, and opportunities delivered to your inbox weekly.</p>
+            <form onsubmit="event.preventDefault();alert('Subscribed! Check your inbox for a confirmation.');" style="display:flex;flex-direction:column;gap:0.75rem;">
+              <input type="email" placeholder="your@email.com" style="padding:0.75rem;border:1px solid var(--gray-200);border-radius:var(--radius-sm);font-family:inherit;font-size:0.875rem;" required>
+              <button type="submit" class="btn btn-primary btn-full">
+                <i class="fas fa-paper-plane"></i> Subscribe
+              </button>
+            </form>
+            <p style="font-size:0.75rem;color:var(--gray-400);margin-top:0.5rem;text-align:center;">No spam, unsubscribe anytime.</p>
+          </div>
+
+          <!-- Write for Us -->
+          <div class="sidebar-widget" style="background:linear-gradient(135deg,#4f46e5,#7c3aed);color:white;border-radius:var(--radius-md);padding:1.5rem;text-align:center;">
+            <i class="fas fa-pen-nib" style="font-size:2rem;margin-bottom:0.75rem;"></i>
+            <h3 style="color:white;font-size:1rem;margin-bottom:0.5rem;">Write for Us</h3>
+            <p style="font-size:0.85rem;opacity:0.85;margin-bottom:1rem;">Share your knowledge and inspire thousands of Kenyan students.</p>
+            <button class="btn btn-white" onclick="alert('Writer applications opening soon! Email hello@campuslink.co.ke')">
+              Apply to Write
+            </button>
+          </div>
+
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo"><i class="fas fa-graduation-cap"></i> Campus Link</a>
+          <p>Connecting university students with resources, opportunities, and each other across Kenya and Africa.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Platform</h4>
+          <ul>
+            <li><a href="resources.html">Academic Resources</a></li>
+            <li><a href="careers.html">Career Opportunities</a></li>
+            <li><a href="networking.html">Student Network</a></li>
+            <li><a href="companies.html">For Companies</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="universities.html">Universities</a></li>
+            <li><a href="help.html">Help Center</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Contact</h4>
+          <ul>
+            <li><i class="fas fa-envelope"></i> hello@campuslink.co.ke</li>
+            <li><i class="fas fa-phone"></i> +254 700 123 456</li>
+            <li><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Campus Link. All rights reserved.</p>
+        <div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LOGIN MODAL -->
+  <div class="modal-overlay" id="loginModal">
+    <div class="modal">
+      <button class="modal-close" id="closeLoginModal" aria-label="Close"><i class="fas fa-times"></i></button>
+      <div class="modal-header"><i class="fas fa-graduation-cap modal-logo-icon"></i><h2>Welcome Back</h2><p>Sign in to your Campus Link account</p></div>
+      <form class="modal-form" id="loginForm" novalidate>
+        <div class="form-group"><label for="loginEmail">Email Address</label><input type="email" id="loginEmail" placeholder="demo@campuslink.com" required></div>
+        <div class="form-group"><label for="loginPassword">Password</label><input type="password" id="loginPassword" placeholder="demo123" required></div>
+        <div class="form-error" id="loginError"></div>
+        <button type="submit" class="btn btn-primary btn-full"><i class="fas fa-sign-in-alt"></i> Sign In</button>
+        <p class="modal-switch">Don't have an account? <a href="#" id="switchToSignup">Sign Up</a></p>
+        <p class="demo-hint"><i class="fas fa-info-circle"></i> Demo: demo@campuslink.com / demo123</p>
+      </form>
+    </div>
+  </div>
+  <!-- SIGNUP MODAL -->
+  <div class="modal-overlay" id="signupModal">
+    <div class="modal">
+      <button class="modal-close" id="closeSignupModal" aria-label="Close"><i class="fas fa-times"></i></button>
+      <div class="modal-header"><i class="fas fa-graduation-cap modal-logo-icon"></i><h2>Join Campus Link</h2><p>Create your free student account</p></div>
+      <form class="modal-form" id="signupForm" novalidate>
+        <div class="form-group"><label for="signupName">Full Name</label><input type="text" id="signupName" placeholder="Your full name" required></div>
+        <div class="form-group"><label for="signupEmail">Email Address</label><input type="email" id="signupEmail" placeholder="student@university.ac.ke" required></div>
+        <div class="form-group"><label for="signupUniversity">University</label><select id="signupUniversity"><option value="">Select your university</option><option>University of Nairobi</option><option>Strathmore University</option><option>JKUAT</option><option>Kenyatta University</option><option>Moi University</option><option>Egerton University</option></select></div>
+        <div class="form-group"><label for="signupPassword">Password</label><input type="password" id="signupPassword" placeholder="Min 6 characters" required></div>
+        <div class="form-error" id="signupError"></div>
+        <button type="submit" class="btn btn-primary btn-full"><i class="fas fa-user-plus"></i> Create Account</button>
+        <p class="modal-switch">Already have an account? <a href="#" id="switchToLogin">Sign In</a></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>

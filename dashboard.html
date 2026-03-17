@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Campus Link</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo"><i class="fas fa-graduation-cap"></i> Campus Link</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="resources.html" class="nav-link">Resources</a></li>
+        <li><a href="careers.html" class="nav-link">Careers</a></li>
+        <li><a href="networking.html" class="nav-link">Networking</a></li>
+        <li><a href="companies.html" class="nav-link">Companies</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="help.html" class="nav-link">Help</a></li>
+      </ul>
+      <div class="nav-auth" id="navAuth">
+        <div class="user-nav">
+          <button class="notification-btn" title="Notifications">
+            <i class="fas fa-bell"></i>
+            <span class="notif-badge">2</span>
+          </button>
+          <div class="user-avatar-nav" id="dashAvatar">AJ</div>
+          <span class="user-name-nav">Alex</span>
+          <button class="btn btn-secondary btn-sm" onclick="handleLogout()">
+            <i class="fas fa-sign-out-alt"></i> Logout
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- DASHBOARD LAYOUT -->
+  <div class="dashboard-wrapper">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar-profile">
+        <div class="sidebar-avatar" id="sidebarAvatar">AJ</div>
+        <h4 id="sidebarName">Alex Johnson</h4>
+        <span id="sidebarUniversity">University of Nairobi</span>
+        <div class="progress-container">
+          <div class="progress-label">
+            <span>Profile Completion</span>
+            <span id="sidebarProgressText">75%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" id="sidebarProgressFill" style="width:75%;"></div>
+          </div>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a href="dashboard.html" class="sidebar-link active">
+          <i class="fas fa-home"></i> Dashboard
+        </a>
+        <a href="resources.html" class="sidebar-link">
+          <i class="fas fa-book"></i> Resources
+        </a>
+        <a href="careers.html" class="sidebar-link">
+          <i class="fas fa-briefcase"></i> Careers
+        </a>
+        <a href="networking.html" class="sidebar-link">
+          <i class="fas fa-users"></i> Network
+        </a>
+        <a href="#" class="sidebar-link">
+          <i class="fas fa-envelope"></i> Messages
+          <span class="sidebar-badge">3</span>
+        </a>
+        <a href="#" class="sidebar-link">
+          <i class="fas fa-bookmark"></i> Saved
+          <span class="sidebar-badge">5</span>
+        </a>
+        <a href="#" class="sidebar-link">
+          <i class="fas fa-cog"></i> Settings
+        </a>
+      </nav>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="dashboard-main">
+
+      <!-- WELCOME HEADER -->
+      <div class="dashboard-header">
+        <div>
+          <h1>Welcome back, <span id="welcomeName">Alex</span>! 👋</h1>
+          <div class="dashboard-date" id="todayDate">Loading date...</div>
+        </div>
+        <a href="careers.html" class="btn btn-primary">
+          <i class="fas fa-search"></i> Find Opportunities
+        </a>
+      </div>
+
+      <!-- QUICK STATS -->
+      <div class="quick-stats">
+        <div class="quick-stat-card">
+          <div class="quick-stat-icon indigo"><i class="fas fa-user-circle"></i></div>
+          <div>
+            <div class="quick-stat-value" id="profileProgressText">75%</div>
+            <div class="quick-stat-label">Profile Complete</div>
+          </div>
+        </div>
+        <div class="quick-stat-card">
+          <div class="quick-stat-icon purple"><i class="fas fa-bookmark"></i></div>
+          <div>
+            <div class="quick-stat-value">5</div>
+            <div class="quick-stat-label">Saved Jobs</div>
+          </div>
+        </div>
+        <div class="quick-stat-card">
+          <div class="quick-stat-icon cyan"><i class="fas fa-envelope"></i></div>
+          <div>
+            <div class="quick-stat-value">3</div>
+            <div class="quick-stat-label">New Messages</div>
+          </div>
+        </div>
+        <div class="quick-stat-card">
+          <div class="quick-stat-icon green"><i class="fas fa-bell"></i></div>
+          <div>
+            <div class="quick-stat-value">2</div>
+            <div class="quick-stat-label">Notifications</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ACTIVITY FEED -->
+      <div class="card mb-4">
+        <div class="card-body">
+          <div class="section-action mb-2">
+            <h2 style="font-size:1.1rem;font-weight:700;color:var(--gray-900);">
+              <i class="fas fa-stream" style="color:var(--primary);margin-right:0.5rem;"></i> Recent Activity
+            </h2>
+            <a href="#" style="font-size:0.875rem;color:var(--primary);font-weight:600;">View All</a>
+          </div>
+          <div class="activity-feed" id="activityFeed">
+            <!-- Populated by dashboard.js -->
+            <div class="activity-item">
+              <div class="activity-icon"><i class="fas fa-briefcase"></i></div>
+              <div class="activity-text">New internship posted at <strong>Safaricom</strong> – Software Engineer Intern</div>
+              <div class="activity-time">2 hours ago</div>
+            </div>
+            <div class="activity-item">
+              <div class="activity-icon" style="background:rgba(124,58,237,0.1);color:#7c3aed;"><i class="fas fa-graduation-cap"></i></div>
+              <div class="activity-text">New scholarship available: <strong>KPLC Engineering Scholarship</strong></div>
+              <div class="activity-time">5 hours ago</div>
+            </div>
+            <div class="activity-item">
+              <div class="activity-icon" style="background:rgba(6,182,212,0.1);color:#06b6d4;"><i class="fas fa-users"></i></div>
+              <div class="activity-text">Study group invite: <strong>Data Structures Study Group</strong></div>
+              <div class="activity-time">1 day ago</div>
+            </div>
+            <div class="activity-item">
+              <div class="activity-icon" style="background:rgba(16,185,129,0.1);color:#10b981;"><i class="fas fa-eye"></i></div>
+              <div class="activity-text">Your profile was viewed by <strong>3 recruiters</strong></div>
+              <div class="activity-time">2 days ago</div>
+            </div>
+            <div class="activity-item">
+              <div class="activity-icon" style="background:rgba(245,158,11,0.1);color:#f59e0b;"><i class="fas fa-envelope"></i></div>
+              <div class="activity-text">New message from <strong>Career Center</strong></div>
+              <div class="activity-time">3 days ago</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TWO COLUMN SECTION -->
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:1.5rem;" class="two-col-grid">
+
+        <!-- Recommended Resources -->
+        <div class="card">
+          <div class="card-body">
+            <div class="section-action mb-3">
+              <h2 style="font-size:1.05rem;font-weight:700;color:var(--gray-900);">
+                <i class="fas fa-book" style="color:var(--primary);margin-right:0.5rem;"></i> Recommended Resources
+              </h2>
+              <a href="resources.html" style="font-size:0.825rem;color:var(--primary);font-weight:600;">Browse All</a>
+            </div>
+            <div id="recommendedResources">
+              <div class="resource-card mb-2">
+                <div class="resource-icon"><i class="fas fa-code"></i></div>
+                <div class="resource-info">
+                  <h4>Introduction to Data Structures</h4>
+                  <div class="resource-type">Computer Science</div>
+                  <div class="resource-downloads"><i class="fas fa-download"></i> 234 downloads</div>
+                </div>
+                <a href="resources.html" class="btn btn-sm btn-outline">View</a>
+              </div>
+              <div class="resource-card mb-2">
+                <div class="resource-icon" style="background:linear-gradient(135deg,#7c3aed,#6d28d9);"><i class="fas fa-chart-bar"></i></div>
+                <div class="resource-info">
+                  <h4>Business Communication Guide</h4>
+                  <div class="resource-type">Business</div>
+                  <div class="resource-downloads"><i class="fas fa-download"></i> 189 downloads</div>
+                </div>
+                <a href="resources.html" class="btn btn-sm btn-outline">View</a>
+              </div>
+              <div class="resource-card">
+                <div class="resource-icon" style="background:linear-gradient(135deg,#06b6d4,#0891b2);"><i class="fas fa-calculator"></i></div>
+                <div class="resource-info">
+                  <h4>Engineering Mathematics Notes</h4>
+                  <div class="resource-type">Engineering</div>
+                  <div class="resource-downloads"><i class="fas fa-download"></i> 312 downloads</div>
+                </div>
+                <a href="resources.html" class="btn btn-sm btn-outline">View</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Saved Opportunities -->
+        <div class="card">
+          <div class="card-body">
+            <div class="section-action mb-3">
+              <h2 style="font-size:1.05rem;font-weight:700;color:var(--gray-900);">
+                <i class="fas fa-bookmark" style="color:var(--accent);margin-right:0.5rem;"></i> Saved Opportunities
+              </h2>
+              <a href="careers.html" style="font-size:0.825rem;color:var(--primary);font-weight:600;">Browse All</a>
+            </div>
+            <div id="savedOpportunities">
+              <div class="saved-job-card" style="background:white;border-radius:12px;padding:1rem 1.25rem;border:1px solid #e2e8f0;margin-bottom:0.75rem;display:flex;align-items:center;gap:1rem;">
+                <div class="company-logo" style="background:#16a34a;width:40px;height:40px;font-size:0.65rem;">SAF</div>
+                <div style="flex:1;min-width:0;">
+                  <div style="font-size:0.875rem;font-weight:700;color:#1e293b;">Software Engineer Intern</div>
+                  <div style="font-size:0.8rem;color:#64748b;">Safaricom · Nairobi</div>
+                  <div style="font-size:0.8rem;color:#4f46e5;font-weight:600;">KSh 25,000/mo</div>
+                </div>
+                <button class="btn btn-sm btn-danger remove-saved-btn" title="Remove"><i class="fas fa-times"></i></button>
+              </div>
+              <div class="saved-job-card" style="background:white;border-radius:12px;padding:1rem 1.25rem;border:1px solid #e2e8f0;margin-bottom:0.75rem;display:flex;align-items:center;gap:1rem;">
+                <div class="company-logo" style="background:#4285f4;width:40px;height:40px;font-size:0.65rem;">GOO</div>
+                <div style="flex:1;min-width:0;">
+                  <div style="font-size:0.875rem;font-weight:700;color:#1e293b;">UX Research Intern</div>
+                  <div style="font-size:0.8rem;color:#64748b;">Google Africa · Nairobi</div>
+                  <div style="font-size:0.8rem;color:#4f46e5;font-weight:600;">KSh 45,000/mo</div>
+                </div>
+                <button class="btn btn-sm btn-danger remove-saved-btn" title="Remove"><i class="fas fa-times"></i></button>
+              </div>
+              <div class="saved-job-card" style="background:white;border-radius:12px;padding:1rem 1.25rem;border:1px solid #e2e8f0;display:flex;align-items:center;gap:1rem;">
+                <div class="company-logo" style="background:#2563eb;width:40px;height:40px;font-size:0.65rem;">KCB</div>
+                <div style="flex:1;min-width:0;">
+                  <div style="font-size:0.875rem;font-weight:700;color:#1e293b;">Data Analyst Intern</div>
+                  <div style="font-size:0.8rem;color:#64748b;">KCB Bank · Nairobi</div>
+                  <div style="font-size:0.8rem;color:#4f46e5;font-weight:600;">KSh 20,000/mo</div>
+                </div>
+                <button class="btn btn-sm btn-danger remove-saved-btn" title="Remove"><i class="fas fa-times"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROFILE COMPLETION WIDGET -->
+      <div class="card">
+        <div class="card-body">
+          <div class="section-action mb-3">
+            <h2 style="font-size:1.05rem;font-weight:700;color:var(--gray-900);">
+              <i class="fas fa-user-check" style="color:var(--success);margin-right:0.5rem;"></i> Complete Your Profile
+            </h2>
+            <div>
+              <div class="progress-label">
+                <span id="profileProgressLabel" style="font-size:0.875rem;color:var(--primary);font-weight:600;">75% Complete</span>
+              </div>
+              <div class="progress-bar" style="width:180px;height:8px;">
+                <div class="progress-fill" id="profileProgressFill" style="width:75%;"></div>
+              </div>
+            </div>
+          </div>
+          <p style="font-size:0.875rem;color:var(--gray-500);margin-bottom:1.25rem;">Complete your profile to increase visibility to recruiters and get better recommendations.</p>
+          <div class="completion-list" id="completionList">
+            <div class="completion-item done">
+              <i class="fas fa-check-circle" style="color:#10b981;"></i>
+              <span style="text-decoration:line-through;color:#94a3b8;">Set your university</span>
+            </div>
+            <div class="completion-item done">
+              <i class="fas fa-check-circle" style="color:#10b981;"></i>
+              <span style="text-decoration:line-through;color:#94a3b8;">Add your full name</span>
+            </div>
+            <div class="completion-item">
+              <i class="fas fa-exclamation-circle" style="color:#f59e0b;"></i>
+              <span>Add a bio to your profile</span>
+            </div>
+            <div class="completion-item">
+              <i class="fas fa-exclamation-circle" style="color:#f59e0b;"></i>
+              <span>Upload a profile photo</span>
+            </div>
+            <div class="completion-item">
+              <i class="fas fa-exclamation-circle" style="color:#f59e0b;"></i>
+              <span>Verify your student email</span>
+            </div>
+          </div>
+          <button class="btn btn-primary mt-3" style="margin-top:1.25rem;">
+            <i class="fas fa-edit"></i> Edit Profile
+          </button>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- LOGIN MODAL -->
+  <div class="modal-overlay" id="loginModal">
+    <div class="modal">
+      <button class="modal-close" id="closeLoginModal" aria-label="Close"><i class="fas fa-times"></i></button>
+      <div class="modal-header">
+        <i class="fas fa-graduation-cap modal-logo-icon"></i>
+        <h2>Welcome Back</h2>
+        <p>Sign in to your Campus Link account</p>
+      </div>
+      <form class="modal-form" id="loginForm" novalidate>
+        <div class="form-group">
+          <label for="loginEmail">Email Address</label>
+          <input type="email" id="loginEmail" placeholder="demo@campuslink.com" required>
+        </div>
+        <div class="form-group">
+          <label for="loginPassword">Password</label>
+          <input type="password" id="loginPassword" placeholder="demo123" required>
+        </div>
+        <div class="form-error" id="loginError"></div>
+        <button type="submit" class="btn btn-primary btn-full"><i class="fas fa-sign-in-alt"></i> Sign In</button>
+        <p class="modal-switch">Don't have an account? <a href="#" id="switchToSignup">Sign Up</a></p>
+        <p class="demo-hint"><i class="fas fa-info-circle"></i> Demo: demo@campuslink.com / demo123</p>
+      </form>
+    </div>
+  </div>
+
+  <!-- SIGNUP MODAL -->
+  <div class="modal-overlay" id="signupModal">
+    <div class="modal">
+      <button class="modal-close" id="closeSignupModal" aria-label="Close"><i class="fas fa-times"></i></button>
+      <div class="modal-header">
+        <i class="fas fa-graduation-cap modal-logo-icon"></i>
+        <h2>Join Campus Link</h2>
+        <p>Create your free student account</p>
+      </div>
+      <form class="modal-form" id="signupForm" novalidate>
+        <div class="form-group">
+          <label for="signupName">Full Name</label>
+          <input type="text" id="signupName" placeholder="Your full name" required>
+        </div>
+        <div class="form-group">
+          <label for="signupEmail">Email Address</label>
+          <input type="email" id="signupEmail" placeholder="student@university.ac.ke" required>
+        </div>
+        <div class="form-group">
+          <label for="signupUniversity">University</label>
+          <select id="signupUniversity">
+            <option value="">Select your university</option>
+            <option>University of Nairobi</option>
+            <option>Strathmore University</option>
+            <option>JKUAT</option>
+            <option>Kenyatta University</option>
+            <option>Moi University</option>
+            <option>Egerton University</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="signupPassword">Password</label>
+          <input type="password" id="signupPassword" placeholder="Min 6 characters" required>
+        </div>
+        <div class="form-error" id="signupError"></div>
+        <button type="submit" class="btn btn-primary btn-full"><i class="fas fa-user-plus"></i> Create Account</button>
+        <p class="modal-switch">Already have an account? <a href="#" id="switchToLogin">Sign In</a></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/dashboard.js"></script>
+  <script>
+    // Responsive two-column grid
+    const twoCol = document.querySelector('.two-col-grid');
+    if (twoCol && window.innerWidth <= 768) {
+      twoCol.style.gridTemplateColumns = '1fr';
+    }
+    window.addEventListener('resize', () => {
+      if (twoCol) twoCol.style.gridTemplateColumns = window.innerWidth <= 768 ? '1fr' : '1fr 1fr';
+    });
+    // Remove saved handlers
+    document.querySelectorAll('.remove-saved-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        const card = this.closest('.saved-job-card');
+        if (card) { card.style.opacity='0'; card.style.transition='opacity 0.3s'; setTimeout(()=>card.remove(),300); }
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Companies &amp; Talent - Campus Link</title>
+  <meta name="description" content="Find your dream company or discover top student talent. Campus Link connects students and recruiters.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo"><i class="fas fa-graduation-cap"></i> Campus Link</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="resources.html" class="nav-link">Resources</a></li>
+        <li><a href="careers.html" class="nav-link">Careers</a></li>
+        <li><a href="networking.html" class="nav-link">Networking</a></li>
+        <li><a href="companies.html" class="nav-link">Companies</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="help.html" class="nav-link">Help</a></li>
+      </ul>
+      <div class="nav-auth" id="navAuth">
+        <button class="btn btn-outline" id="loginBtn">Login</button>
+        <button class="btn btn-primary" id="signupBtn">Sign Up</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="page-hero-content">
+      <div class="badge badge-primary mb-3"><i class="fas fa-building"></i> Companies &amp; Talent</div>
+      <h1>Where Companies Meet Top Student Talent</h1>
+      <p>Students find their dream companies. Recruiters discover Kenya's brightest emerging talent. Campus Link makes it happen.</p>
+      <div style="display:flex;gap:1rem;justify-content:center;margin-top:1.5rem;flex-wrap:wrap;">
+        <button class="btn btn-primary btn-large" id="heroSignupBtn">
+          <i class="fas fa-search"></i> Browse Companies
+        </button>
+        <button class="btn btn-outline btn-large" onclick="document.getElementById('recruiterSection').scrollIntoView({behavior:'smooth'})">
+          <i class="fas fa-briefcase"></i> Post a Job
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED COMPANIES -->
+  <section style="background:var(--gray-50);">
+    <div class="container">
+      <div class="section-header">
+        <h2>Featured Companies</h2>
+        <p>Explore Kenya's top employers actively hiring from Campus Link</p>
+      </div>
+      <div class="companies-grid">
+        <div class="company-card animate-on-scroll">
+          <div class="company-logo-lg" style="background:#16a34a;">SAF</div>
+          <h3>Safaricom PLC</h3>
+          <div class="company-industry"><i class="fas fa-mobile-alt"></i> Telecommunications</div>
+          <div class="company-location"><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</div>
+          <div class="company-description">Kenya's largest telco and technology company, pioneer of M-PESA mobile money.</div>
+          <div class="company-positions">
+            <span class="badge badge-primary"><i class="fas fa-briefcase"></i> 12 open positions</span>
+          </div>
+          <a href="careers.html" class="btn btn-primary btn-full">View Jobs</a>
+        </div>
+        <div class="company-card animate-on-scroll">
+          <div class="company-logo-lg" style="background:#2563eb;">KCB</div>
+          <h3>KCB Bank Group</h3>
+          <div class="company-industry"><i class="fas fa-university"></i> Banking &amp; Finance</div>
+          <div class="company-location"><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</div>
+          <div class="company-description">Leading bank in East Africa with operations across 7 countries in the region.</div>
+          <div class="company-positions">
+            <span class="badge badge-primary"><i class="fas fa-briefcase"></i> 8 open positions</span>
+          </div>
+          <a href="careers.html" class="btn btn-primary btn-full">View Jobs</a>
+        </div>
+        <div class="company-card animate-on-scroll">
+          <div class="company-logo-lg" style="background:#dc2626;">EQB</div>
+          <h3>Equity Bank</h3>
+          <div class="company-industry"><i class="fas fa-university"></i> Banking &amp; Finance</div>
+          <div class="company-location"><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</div>
+          <div class="company-description">Pan-African bank focused on financial inclusion and empowerment for all.</div>
+          <div class="company-positions">
+            <span class="badge badge-primary"><i class="fas fa-briefcase"></i> 6 open positions</span>
+          </div>
+          <a href="careers.html" class="btn btn-primary btn-full">View Jobs</a>
+        </div>
+        <div class="company-card animate-on-scroll">
+          <div class="company-logo-lg" style="background:#ea580c;">NMG</div>
+          <h3>Nation Media Group</h3>
+          <div class="company-industry"><i class="fas fa-newspaper"></i> Media &amp; Publishing</div>
+          <div class="company-location"><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</div>
+          <div class="company-description">East Africa's largest independent media house with regional and international reach.</div>
+          <div class="company-positions">
+            <span class="badge badge-primary"><i class="fas fa-briefcase"></i> 4 open positions</span>
+          </div>
+          <a href="careers.html" class="btn btn-primary btn-full">View Jobs</a>
+        </div>
+        <div class="company-card animate-on-scroll">
+          <div class="company-logo-lg" style="background:#4285f4;">GOO</div>
+          <h3>Google Africa</h3>
+          <div class="company-industry"><i class="fas fa-globe"></i> Technology</div>
+          <div class="company-location"><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</div>
+          <div class="company-description">Google's Africa hub driving digital innovation and inclusion across the continent.</div>
+          <div class="company-positions">
+            <span class="badge badge-warning"><i class="fas fa-briefcase"></i> 3 open positions</span>
+          </div>
+          <a href="careers.html" class="btn btn-primary btn-full">View Jobs</a>
+        </div>
+        <div class="company-card animate-on-scroll">
+          <div class="company-logo-lg" style="background:#0369a1;">DEL</div>
+          <h3>Deloitte Kenya</h3>
+          <div class="company-industry"><i class="fas fa-chart-bar"></i> Consulting</div>
+          <div class="company-location"><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</div>
+          <div class="company-description">Global leader in audit, consulting, tax, and advisory services with deep Kenya roots.</div>
+          <div class="company-positions">
+            <span class="badge badge-primary"><i class="fas fa-briefcase"></i> 10 open positions</span>
+          </div>
+          <a href="careers.html" class="btn btn-primary btn-full">View Jobs</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TALENT SEARCH -->
+  <section style="background:white;">
+    <div class="container">
+      <div class="section-header">
+        <h2>Discover Student Talent</h2>
+        <p>Recruiters: Search and connect with top students from Kenya's best universities</p>
+      </div>
+      <div class="talent-search-bar">
+        <input type="text" placeholder="Search by skills (Python, Finance, Design...)">
+        <select>
+          <option value="">All Universities</option>
+          <option>University of Nairobi</option>
+          <option>Strathmore University</option>
+          <option>JKUAT</option>
+          <option>Kenyatta University</option>
+        </select>
+        <select>
+          <option value="">All Courses</option>
+          <option>Computer Science</option>
+          <option>Engineering</option>
+          <option>Business</option>
+          <option>Medicine</option>
+          <option>Law</option>
+        </select>
+        <select>
+          <option value="">Year of Study</option>
+          <option>Year 1</option>
+          <option>Year 2</option>
+          <option>Year 3</option>
+          <option>Year 4</option>
+          <option>Final Year</option>
+        </select>
+        <button class="btn btn-primary"><i class="fas fa-search"></i> Search</button>
+      </div>
+      <div class="students-grid" style="margin-top:2rem;">
+        <div class="student-card animate-on-scroll">
+          <div class="student-avatar" style="background:linear-gradient(135deg,#06b6d4,#0891b2);">WK</div>
+          <h3>Wanjiru Kamau</h3>
+          <p class="university"><i class="fas fa-university"></i> University of Nairobi</p>
+          <p class="course">Computer Science · Year 3</p>
+          <div class="skills-list">
+            <span class="skill-tag">Python</span><span class="skill-tag">React</span><span class="skill-tag">ML</span>
+          </div>
+          <button class="btn btn-primary btn-full connect-btn" data-connected="false"><i class="fas fa-paper-plane"></i> Contact</button>
+        </div>
+        <div class="student-card animate-on-scroll">
+          <div class="student-avatar" style="background:linear-gradient(135deg,#4f46e5,#7c3aed);">BO</div>
+          <h3>Brian Omondi</h3>
+          <p class="university"><i class="fas fa-university"></i> JKUAT</p>
+          <p class="course">Electrical Engineering · Year 4</p>
+          <div class="skills-list">
+            <span class="skill-tag">MATLAB</span><span class="skill-tag">AutoCAD</span>
+          </div>
+          <button class="btn btn-primary btn-full connect-btn" data-connected="false"><i class="fas fa-paper-plane"></i> Contact</button>
+        </div>
+        <div class="student-card animate-on-scroll">
+          <div class="student-avatar" style="background:linear-gradient(135deg,#7c3aed,#6d28d9);">AN</div>
+          <h3>Amina Noor</h3>
+          <p class="university"><i class="fas fa-university"></i> Strathmore University</p>
+          <p class="course">Business Admin · Year 2</p>
+          <div class="skills-list">
+            <span class="skill-tag">Finance</span><span class="skill-tag">Analytics</span>
+          </div>
+          <button class="btn btn-primary btn-full connect-btn" data-connected="false"><i class="fas fa-paper-plane"></i> Contact</button>
+        </div>
+        <div class="student-card animate-on-scroll">
+          <div class="student-avatar" style="background:linear-gradient(135deg,#10b981,#059669);">DM</div>
+          <h3>Dennis Mutua</h3>
+          <p class="university"><i class="fas fa-university"></i> Kenyatta University</p>
+          <p class="course">Medicine · Year 5</p>
+          <div class="skills-list">
+            <span class="skill-tag">Research</span><span class="skill-tag">Healthcare</span>
+          </div>
+          <button class="btn btn-primary btn-full connect-btn" data-connected="false"><i class="fas fa-paper-plane"></i> Contact</button>
+        </div>
+        <div class="student-card animate-on-scroll">
+          <div class="student-avatar" style="background:linear-gradient(135deg,#f59e0b,#d97706);">FO</div>
+          <h3>Faith Ochieng</h3>
+          <p class="university"><i class="fas fa-university"></i> Moi University</p>
+          <p class="course">Law · Year 3</p>
+          <div class="skills-list">
+            <span class="skill-tag">Legal Research</span><span class="skill-tag">Advocacy</span>
+          </div>
+          <button class="btn btn-primary btn-full connect-btn" data-connected="false"><i class="fas fa-paper-plane"></i> Contact</button>
+        </div>
+        <div class="student-card animate-on-scroll">
+          <div class="student-avatar" style="background:linear-gradient(135deg,#ef4444,#dc2626);">SM</div>
+          <h3>Samuel Mwangi</h3>
+          <p class="university"><i class="fas fa-university"></i> Egerton University</p>
+          <p class="course">Agriculture · Year 2</p>
+          <div class="skills-list">
+            <span class="skill-tag">AgriTech</span><span class="skill-tag">GIS</span>
+          </div>
+          <button class="btn btn-primary btn-full connect-btn" data-connected="false"><i class="fas fa-paper-plane"></i> Contact</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECRUITER CTA -->
+  <section id="recruiterSection" class="cta-section" style="background:linear-gradient(135deg,#1e293b,#0f172a);">
+    <div class="container">
+      <i class="fas fa-briefcase" style="font-size:3rem;margin-bottom:1rem;color:rgba(255,255,255,0.8);"></i>
+      <h2>Are You a Recruiter?</h2>
+      <p>Post jobs, search student profiles, and build your pipeline with Campus Link's recruiting tools. Access 10,000+ verified student profiles.</p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:2rem;">
+        <button class="btn btn-white btn-large" onclick="alert('Job posting feature coming soon! Contact hello@campuslink.co.ke')">
+          <i class="fas fa-plus"></i> Post a Job
+        </button>
+        <button class="btn btn-outline btn-large" style="border-color:rgba(255,255,255,0.4);color:white;" onclick="alert('Recruiter accounts coming soon! Contact hello@campuslink.co.ke')">
+          <i class="fas fa-user-tie"></i> Create Recruiter Account
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOR COMPANIES FEATURES -->
+  <section style="background:var(--gray-50);">
+    <div class="container">
+      <div class="section-header">
+        <h2>Why Companies Choose Campus Link</h2>
+        <p>Build your talent pipeline with Kenya's most engaged student community</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card animate-on-scroll">
+          <div class="feature-icon"><i class="fas fa-search"></i></div>
+          <h3>Targeted Talent Search</h3>
+          <p>Filter candidates by university, course, year of study, skills, and GPA to find the perfect match for your roles.</p>
+        </div>
+        <div class="feature-card animate-on-scroll">
+          <div class="feature-icon"><i class="fas fa-chart-bar"></i></div>
+          <h3>Recruiter Dashboard</h3>
+          <p>Manage all your job postings, track applications, and communicate with candidates from one central dashboard.</p>
+        </div>
+        <div class="feature-card animate-on-scroll">
+          <div class="feature-icon"><i class="fas fa-building"></i></div>
+          <h3>Company Profile</h3>
+          <p>Create a compelling company profile that showcases your culture, values, and opportunities to attract top student talent.</p>
+        </div>
+        <div class="feature-card animate-on-scroll">
+          <div class="feature-icon"><i class="fas fa-calendar-check"></i></div>
+          <h3>Campus Events</h3>
+          <p>Host virtual or in-person events on Campus Link to engage with students and build brand awareness on campuses.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo"><i class="fas fa-graduation-cap"></i> Campus Link</a>
+          <p>Connecting university students with resources, opportunities, and each other across Kenya and Africa.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Platform</h4>
+          <ul>
+            <li><a href="resources.html">Academic Resources</a></li>
+            <li><a href="careers.html">Career Opportunities</a></li>
+            <li><a href="networking.html">Student Network</a></li>
+            <li><a href="companies.html">For Companies</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="universities.html">Universities</a></li>
+            <li><a href="help.html">Help Center</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Contact</h4>
+          <ul>
+            <li><i class="fas fa-envelope"></i> hello@campuslink.co.ke</li>
+            <li><i class="fas fa-phone"></i> +254 700 123 456</li>
+            <li><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Campus Link. All rights reserved.</p>
+        <div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LOGIN MODAL -->
+  <div class="modal-overlay" id="loginModal">
+    <div class="modal">
+      <button class="modal-close" id="closeLoginModal" aria-label="Close"><i class="fas fa-times"></i></button>
+      <div class="modal-header"><i class="fas fa-graduation-cap modal-logo-icon"></i><h2>Welcome Back</h2><p>Sign in to your Campus Link account</p></div>
+      <form class="modal-form" id="loginForm" novalidate>
+        <div class="form-group"><label for="loginEmail">Email Address</label><input type="email" id="loginEmail" placeholder="demo@campuslink.com" required></div>
+        <div class="form-group"><label for="loginPassword">Password</label><input type="password" id="loginPassword" placeholder="demo123" required></div>
+        <div class="form-error" id="loginError"></div>
+        <button type="submit" class="btn btn-primary btn-full"><i class="fas fa-sign-in-alt"></i> Sign In</button>
+        <p class="modal-switch">Don't have an account? <a href="#" id="switchToSignup">Sign Up</a></p>
+        <p class="demo-hint"><i class="fas fa-info-circle"></i> Demo: demo@campuslink.com / demo123</p>
+      </form>
+    </div>
+  </div>
+  <!-- SIGNUP MODAL -->
+  <div class="modal-overlay" id="signupModal">
+    <div class="modal">
+      <button class="modal-close" id="closeSignupModal" aria-label="Close"><i class="fas fa-times"></i></button>
+      <div class="modal-header"><i class="fas fa-graduation-cap modal-logo-icon"></i><h2>Join Campus Link</h2><p>Create your free student account</p></div>
+      <form class="modal-form" id="signupForm" novalidate>
+        <div class="form-group"><label for="signupName">Full Name</label><input type="text" id="signupName" placeholder="Your full name" required></div>
+        <div class="form-group"><label for="signupEmail">Email Address</label><input type="email" id="signupEmail" placeholder="student@university.ac.ke" required></div>
+        <div class="form-group"><label for="signupUniversity">University</label><select id="signupUniversity"><option value="">Select your university</option><option>University of Nairobi</option><option>Strathmore University</option><option>JKUAT</option><option>Kenyatta University</option><option>Moi University</option><option>Egerton University</option></select></div>
+        <div class="form-group"><label for="signupPassword">Password</label><input type="password" id="signupPassword" placeholder="Min 6 characters" required></div>
+        <div class="form-error" id="signupError"></div>
+        <button type="submit" class="btn btn-primary btn-full"><i class="fas fa-user-plus"></i> Create Account</button>
+        <p class="modal-switch">Already have an account? <a href="#" id="switchToLogin">Sign In</a></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>

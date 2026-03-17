@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Partner Universities - Campus Link</title>
+  <meta name="description" content="Explore Campus Link's partner universities across Kenya. Access resources, announcements, and academic communities.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo"><i class="fas fa-graduation-cap"></i> Campus Link</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="resources.html" class="nav-link">Resources</a></li>
+        <li><a href="careers.html" class="nav-link">Careers</a></li>
+        <li><a href="networking.html" class="nav-link">Networking</a></li>
+        <li><a href="companies.html" class="nav-link">Companies</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="help.html" class="nav-link">Help</a></li>
+      </ul>
+      <div class="nav-auth" id="navAuth">
+        <button class="btn btn-outline" id="loginBtn">Login</button>
+        <button class="btn btn-primary" id="signupBtn">Sign Up</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="page-hero-content">
+      <div class="badge badge-primary mb-3"><i class="fas fa-university"></i> Academic Partners</div>
+      <h1>Partner Universities</h1>
+      <p>Campus Link proudly partners with Kenya's leading universities to provide students with the best resources, connections, and opportunities.</p>
+    </div>
+  </section>
+
+  <!-- FEATURED UNIVERSITIES -->
+  <section style="background:var(--gray-50);">
+    <div class="container">
+      <div class="section-header">
+        <h2>Featured Universities</h2>
+        <p>Our growing network of partner institutions across Kenya</p>
+      </div>
+      <div class="universities-grid">
+        <div class="university-card animate-on-scroll">
+          <div class="university-logo" style="background:linear-gradient(135deg,#1e3a5f,#0f2a4f);">UoN</div>
+          <div class="university-info">
+            <h3>University of Nairobi</h3>
+            <div class="university-meta">
+              <span><i class="fas fa-calendar"></i> Est. 1956</span>
+              <span><i class="fas fa-users"></i> 62,000 students</span>
+            </div>
+            <div class="university-stats">
+              <div><strong>234</strong><span>Resources</span></div>
+              <div><strong>8</strong><span>Departments</span></div>
+              <div><strong>62K</strong><span>Students</span></div>
+            </div>
+            <div style="display:flex;flex-wrap:wrap;gap:0.4rem;margin-top:0.75rem;">
+              <span class="badge badge-primary">Engineering</span>
+              <span class="badge badge-primary">Medicine</span>
+              <span class="badge badge-primary">Law</span>
+              <span class="badge badge-primary">Business</span>
+            </div>
+            <a href="resources.html" class="btn btn-primary btn-full" style="margin-top:1rem;">Explore Resources</a>
+          </div>
+        </div>
+        <div class="university-card animate-on-scroll">
+          <div class="university-logo" style="background:linear-gradient(135deg,#7f1d1d,#991b1b);">STR</div>
+          <div class="university-info">
+            <h3>Strathmore University</h3>
+            <div class="university-meta">
+              <span><i class="fas fa-calendar"></i> Est. 1961</span>
+              <span><i class="fas fa-users"></i> 7,500 students</span>
+            </div>
+            <div class="university-stats">
+              <div><strong>189</strong><span>Resources</span></div>
+              <div><strong>5</strong><span>Departments</span></div>
+              <div><strong>7.5K</strong><span>Students</span></div>
+            </div>
+            <div style="display:flex;flex-wrap:wrap;gap:0.4rem;margin-top:0.75rem;">
+              <span class="badge badge-primary">Business</span>
+              <span class="badge badge-primary">IT</span>
+              <span class="badge badge-primary">Law</span>
+            </div>
+            <a href="resources.html" class="btn btn-primary btn-full" style="margin-top:1rem;">Explore Resources</a>
+          </div>
+        </div>
+        <div class="university-card animate-on-scroll">
+          <div class="university-logo" style="background:linear-gradient(135deg,#14532d,#166534);">JKU</div>
+          <div class="university-info">
+            <h3>JKUAT</h3>
+            <div class="university-meta">
+              <span><i class="fas fa-calendar"></i> Est. 1994</span>
+              <span><i class="fas fa-users"></i> 40,000 students</span>
+            </div>
+            <div class="university-stats">
+              <div><strong>312</strong><span>Resources</span></div>
+              <div><strong>9</strong><span>Departments</span></div>
+              <div><strong>40K</strong><span>Students</span></div>
+            </div>
+            <div style="display:flex;flex-wrap:wrap;gap:0.4rem;margin-top:0.75rem;">
+              <span class="badge badge-primary">Engineering</span>
+              <span class="badge badge-primary">IT</span>
+              <span class="badge badge-primary">Agriculture</span>
+            </div>
+            <a href="resources.html" class="btn btn-primary btn-full" style="margin-top:1rem;">Explore Resources</a>
+          </div>
+        </div>
+        <div class="university-card animate-on-scroll">
+          <div class="university-logo" style="background:linear-gradient(135deg,#991b1b,#b91c1c);">KU</div>
+          <div class="university-info">
+            <h3>Kenyatta University</h3>
+            <div class="university-meta">
+              <span><i class="fas fa-calendar"></i> Est. 1985</span>
+              <span><i class="fas fa-users"></i> 75,000 students</span>
+            </div>
+            <div class="university-stats">
+              <div><strong>276</strong><span>Resources</span></div>
+              <div><strong>10</strong><span>Departments</span></div>
+              <div><strong>75K</strong><span>Students</span></div>
+            </div>
+            <div style="display:flex;flex-wrap:wrap;gap:0.4rem;margin-top:0.75rem;">
+              <span class="badge badge-primary">Education</span>
+              <span class="badge badge-primary">Science</span>
+              <span class="badge badge-primary">Arts</span>
+            </div>
+            <a href="resources.html" class="btn btn-primary btn-full" style="margin-top:1rem;">Explore Resources</a>
+          </div>
+        </div>
+        <div class="university-card animate-on-scroll">
+          <div class="university-logo" style="background:linear-gradient(135deg,#1d4ed8,#1e40af);">MU</div>
+          <div class="university-info">
+            <h3>Moi University</h3>
+            <div class="university-meta">
+              <span><i class="fas fa-calendar"></i> Est. 1984</span>
+              <span><i class="fas fa-users"></i> 55,000 students</span>
+            </div>
+            <div class="university-stats">
+              <div><strong>198</strong><span>Resources</span></div>
+              <div><strong>7</strong><span>Departments</span></div>
+              <div><strong>55K</strong><span>Students</span></div>
+            </div>
+            <div style="display:flex;flex-wrap:wrap;gap:0.4rem;margin-top:0.75rem;">
+              <span class="badge badge-primary">Medicine</span>
+              <span class="badge badge-primary">Law</span>
+              <span class="badge badge-primary">Science</span>
+            </div>
+            <a href="resources.html" class="btn btn-primary btn-full" style="margin-top:1rem;">Explore Resources</a>
+          </div>
+        </div>
+        <div class="university-card animate-on-scroll">
+          <div class="university-logo" style="background:linear-gradient(135deg,#78350f,#92400e);">EGE</div>
+          <div class="university-info">
+            <h3>Egerton University</h3>
+            <div class="university-meta">
+              <span><i class="fas fa-calendar"></i> Est. 1939</span>
+              <span><i class="fas fa-users"></i> 35,000 students</span>
+            </div>
+            <div class="university-stats">
+              <div><strong>167</strong><span>Resources</span></div>
+              <div><strong>6</strong><span>Departments</span></div>
+              <div><strong>35K</strong><span>Students</span></div>
+            </div>
+            <div style="display:flex;flex-wrap:wrap;gap:0.4rem;margin-top:0.75rem;">
+              <span class="badge badge-primary">Agriculture</span>
+              <span class="badge badge-primary">Education</span>
+              <span class="badge badge-primary">Science</span>
+            </div>
+            <a href="resources.html" class="btn btn-primary btn-full" style="margin-top:1rem;">Explore Resources</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOR LECTURERS -->
+  <section style="background:white;">
+    <div class="container">
+      <div class="section-header">
+        <h2>For Lecturers &amp; Academic Staff</h2>
+        <p>Empower your students by sharing resources and engaging with them on Campus Link</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card animate-on-scroll">
+          <div class="feature-icon"><i class="fas fa-cloud-upload-alt"></i></div>
+          <h3>Share Resources</h3>
+          <p>Upload lecture notes, past papers, syllabi, and study guides directly to your students through the Campus Link platform.</p>
+        </div>
+        <div class="feature-card animate-on-scroll">
+          <div class="feature-icon"><i class="fas fa-bullhorn"></i></div>
+          <h3>Post Announcements</h3>
+          <p>Reach your students instantly with important announcements, schedule changes, and academic updates in real-time.</p>
+        </div>
+        <div class="feature-card animate-on-scroll">
+          <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
+          <h3>Track Engagement</h3>
+          <p>See which resources your students engage with most, track downloads, and get insights to improve your teaching materials.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ANNOUNCEMENTS -->
+  <section style="background:var(--gray-50);">
+    <div class="container">
+      <div class="section-header">
+        <h2>University Announcements</h2>
+        <p>Latest news and updates from our partner institutions</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:1rem;">
+        <div class="card">
+          <div class="card-body" style="display:flex;align-items:center;gap:1.5rem;">
+            <div style="width:52px;height:52px;background:linear-gradient(135deg,#1e3a5f,#0f2a4f);border-radius:12px;display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:0.75rem;flex-shrink:0;">UoN</div>
+            <div style="flex:1;">
+              <span class="badge badge-primary" style="margin-bottom:0.4rem;">University of Nairobi</span>
+              <h3 style="font-size:1rem;font-weight:700;color:var(--gray-900);margin-bottom:0.25rem;">Semester 2 2024 Timetable Released</h3>
+              <p style="font-size:0.875rem;color:var(--gray-500);">The official timetable for Semester 2, 2024 is now available. Students can access it through the UoN student portal.</p>
+            </div>
+            <div style="text-align:right;flex-shrink:0;">
+              <div style="font-size:0.8rem;color:var(--gray-400);margin-bottom:0.5rem;">March 15, 2024</div>
+              <a href="#" class="btn btn-sm btn-outline">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body" style="display:flex;align-items:center;gap:1.5rem;">
+            <div style="width:52px;height:52px;background:linear-gradient(135deg,#14532d,#166534);border-radius:12px;display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:0.75rem;flex-shrink:0;">JKU</div>
+            <div style="flex:1;">
+              <span class="badge badge-success" style="margin-bottom:0.4rem;">JKUAT</span>
+              <h3 style="font-size:1rem;font-weight:700;color:var(--gray-900);margin-bottom:0.25rem;">Applications Open for Industrial Attachment 2024</h3>
+              <p style="font-size:0.875rem;color:var(--gray-500);">JKUAT students in their 3rd and final years are invited to apply for industrial attachment placements with partner companies.</p>
+            </div>
+            <div style="text-align:right;flex-shrink:0;">
+              <div style="font-size:0.8rem;color:var(--gray-400);margin-bottom:0.5rem;">March 10, 2024</div>
+              <a href="#" class="btn btn-sm btn-outline">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body" style="display:flex;align-items:center;gap:1.5rem;">
+            <div style="width:52px;height:52px;background:linear-gradient(135deg,#7f1d1d,#991b1b);border-radius:12px;display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:0.75rem;flex-shrink:0;">STR</div>
+            <div style="flex:1;">
+              <span class="badge badge-warning" style="margin-bottom:0.4rem;">Strathmore University</span>
+              <h3 style="font-size:1rem;font-weight:700;color:var(--gray-900);margin-bottom:0.25rem;">Business Case Competition 2024 – Register Now</h3>
+              <p style="font-size:0.875rem;color:var(--gray-500);">Strathmore Business School's annual case competition is open to all business students. Win cash prizes and mentorship opportunities.</p>
+            </div>
+            <div style="text-align:right;flex-shrink:0;">
+              <div style="font-size:0.8rem;color:var(--gray-400);margin-bottom:0.5rem;">March 8, 2024</div>
+              <a href="#" class="btn btn-sm btn-outline">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIST YOUR UNIVERSITY -->
+  <section style="background:white;">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;" class="story-grid">
+        <div>
+          <div class="badge badge-primary mb-3">Partner with Us</div>
+          <h2 style="font-size:1.75rem;font-weight:800;color:var(--gray-900);margin-bottom:1rem;">List Your University on Campus Link</h2>
+          <p style="color:var(--gray-500);line-height:1.7;margin-bottom:1rem;">Join our growing network of partner universities and give your students access to thousands of resources, internship opportunities, and a nationwide student community.</p>
+          <ul style="list-style:none;display:flex;flex-direction:column;gap:0.6rem;margin-bottom:1.5rem;">
+            <li style="display:flex;align-items:center;gap:0.75rem;font-size:0.9rem;color:var(--gray-600);">
+              <i class="fas fa-check-circle" style="color:#10b981;"></i> Free university profile page
+            </li>
+            <li style="display:flex;align-items:center;gap:0.75rem;font-size:0.9rem;color:var(--gray-600);">
+              <i class="fas fa-check-circle" style="color:#10b981;"></i> Resource sharing tools for lecturers
+            </li>
+            <li style="display:flex;align-items:center;gap:0.75rem;font-size:0.9rem;color:var(--gray-600);">
+              <i class="fas fa-check-circle" style="color:#10b981;"></i> Student engagement analytics
+            </li>
+            <li style="display:flex;align-items:center;gap:0.75rem;font-size:0.9rem;color:var(--gray-600);">
+              <i class="fas fa-check-circle" style="color:#10b981;"></i> Direct link to employer partnerships
+            </li>
+          </ul>
+        </div>
+        <div class="card" style="padding:2rem;">
+          <h3 style="font-size:1.1rem;font-weight:700;color:var(--gray-900);margin-bottom:1.25rem;">Apply to Partner</h3>
+          <form onsubmit="event.preventDefault();alert('Thank you! We\'ll be in touch within 48 hours.');">
+            <div class="form-group">
+              <label>Your Name</label>
+              <input type="text" placeholder="Full name" required>
+            </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" placeholder="official@university.ac.ke" required>
+            </div>
+            <div class="form-group">
+              <label>University Name</label>
+              <input type="text" placeholder="University name" required>
+            </div>
+            <div class="form-group">
+              <label>Your Role</label>
+              <input type="text" placeholder="e.g., Registrar, Dean of Students">
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <textarea placeholder="Tell us about your university and how you'd like to partner..." rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fas fa-paper-plane"></i> Submit Application
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo"><i class="fas fa-graduation-cap"></i> Campus Link</a>
+          <p>Connecting university students with resources, opportunities, and each other across Kenya and Africa.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Platform</h4>
+          <ul>
+            <li><a href="resources.html">Academic Resources</a></li>
+            <li><a href="careers.html">Career Opportunities</a></li>
+            <li><a href="networking.html">Student Network</a></li>
+            <li><a href="companies.html">For Companies</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="universities.html">Universities</a></li>
+            <li><a href="help.html">Help Center</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Contact</h4>
+          <ul>
+            <li><i class="fas fa-envelope"></i> hello@campuslink.co.ke</li>
+            <li><i class="fas fa-phone"></i> +254 700 123 456</li>
+            <li><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Campus Link. All rights reserved.</p>
+        <div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LOGIN MODAL -->
+  <div class="modal-overlay" id="loginModal">
+    <div class="modal">
+      <button class="modal-close" id="closeLoginModal" aria-label="Close"><i class="fas fa-times"></i></button>
+      <div class="modal-header"><i class="fas fa-graduation-cap modal-logo-icon"></i><h2>Welcome Back</h2><p>Sign in to your Campus Link account</p></div>
+      <form class="modal-form" id="loginForm" novalidate>
+        <div class="form-group"><label for="loginEmail">Email Address</label><input type="email" id="loginEmail" placeholder="demo@campuslink.com" required></div>
+        <div class="form-group"><label for="loginPassword">Password</label><input type="password" id="loginPassword" placeholder="demo123" required></div>
+        <div class="form-error" id="loginError"></div>
+        <button type="submit" class="btn btn-primary btn-full"><i class="fas fa-sign-in-alt"></i> Sign In</button>
+        <p class="modal-switch">Don't have an account? <a href="#" id="switchToSignup">Sign Up</a></p>
+        <p class="demo-hint"><i class="fas fa-info-circle"></i> Demo: demo@campuslink.com / demo123</p>
+      </form>
+    </div>
+  </div>
+  <!-- SIGNUP MODAL -->
+  <div class="modal-overlay" id="signupModal">
+    <div class="modal">
+      <button class="modal-close" id="closeSignupModal" aria-label="Close"><i class="fas fa-times"></i></button>
+      <div class="modal-header"><i class="fas fa-graduation-cap modal-logo-icon"></i><h2>Join Campus Link</h2><p>Create your free student account</p></div>
+      <form class="modal-form" id="signupForm" novalidate>
+        <div class="form-group"><label for="signupName">Full Name</label><input type="text" id="signupName" placeholder="Your full name" required></div>
+        <div class="form-group"><label for="signupEmail">Email Address</label><input type="email" id="signupEmail" placeholder="student@university.ac.ke" required></div>
+        <div class="form-group"><label for="signupUniversity">University</label><select id="signupUniversity"><option value="">Select your university</option><option>University of Nairobi</option><option>Strathmore University</option><option>JKUAT</option><option>Kenyatta University</option><option>Moi University</option><option>Egerton University</option></select></div>
+        <div class="form-group"><label for="signupPassword">Password</label><input type="password" id="signupPassword" placeholder="Min 6 characters" required></div>
+        <div class="form-error" id="signupError"></div>
+        <button type="submit" class="btn btn-primary btn-full"><i class="fas fa-user-plus"></i> Create Account</button>
+        <p class="modal-switch">Already have an account? <a href="#" id="switchToLogin">Sign In</a></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/auth.js"></script>
+  <script>
+    const storyGrid = document.querySelector('.story-grid');
+    if (storyGrid && window.innerWidth <= 768) { storyGrid.style.gridTemplateColumns = '1fr'; }
+    window.addEventListener('resize', () => {
+      if (storyGrid) storyGrid.style.gridTemplateColumns = window.innerWidth <= 768 ? '1fr' : '1fr 1fr';
+    });
+  </script>
+</body>
+</html>
