@@ -2,6 +2,36 @@
 // CAMPUS LINK - Main JavaScript
 // =============================================
 
+// ---- Theme Toggle (Dark / Light Mode) ----
+// Apply saved theme immediately to prevent flash
+(function () {
+  const savedTheme = localStorage.getItem('theme') || 'light';
+  document.documentElement.setAttribute('data-theme', savedTheme);
+})();
+
+function updateThemeIcons(theme) {
+  document.querySelectorAll('#themeToggle i').forEach(function (icon) {
+    icon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+  });
+}
+
+// Set initial icon state and attach toggle listener once DOM is ready
+document.addEventListener('DOMContentLoaded', function () {
+  const savedTheme = localStorage.getItem('theme') || 'light';
+  updateThemeIcons(savedTheme);
+
+  var themeToggle = document.getElementById('themeToggle');
+  if (themeToggle) {
+    themeToggle.addEventListener('click', function () {
+      var current = document.documentElement.getAttribute('data-theme');
+      var next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+      updateThemeIcons(next);
+    });
+  }
+});
+
 // ---- Mobile Navigation Toggle ----
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('navLinks');
