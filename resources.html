@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academic Resources - Campus Link</title>
+  <meta name="description" content="Access thousands of study materials, past papers, lecture notes, study groups and tutoring services.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo"><i class="fas fa-graduation-cap"></i> Campus Link</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="resources.html" class="nav-link">Resources</a></li>
+        <li><a href="careers.html" class="nav-link">Careers</a></li>
+        <li><a href="networking.html" class="nav-link">Networking</a></li>
+        <li><a href="companies.html" class="nav-link">Companies</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="help.html" class="nav-link">Help</a></li>
+      </ul>
+      <div class="nav-auth" id="navAuth">
+        <button class="btn btn-outline" id="loginBtn">Login</button>
+        <button class="btn btn-primary" id="signupBtn">Sign Up</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="page-hero-content">
+      <div class="badge badge-primary mb-3"><i class="fas fa-book-open"></i> Learning Hub</div>
+      <h1>Academic Resources</h1>
+      <p>Access thousands of study materials, past papers, and lecture notes. Connect with tutors and study groups.</p>
+      <div class="search-bar hero-search" style="margin-top:1.5rem;">
+        <input type="text" id="resourceSearch" placeholder="Search resources, subjects, topics...">
+        <button><i class="fas fa-search"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <section style="background:var(--gray-50);">
+    <div class="container">
+
+      <!-- TABS -->
+      <div class="tabs">
+        <div class="tab-nav">
+          <button class="tab-btn active" data-tab="studyMaterials">
+            <i class="fas fa-file-alt"></i> Study Materials
+          </button>
+          <button class="tab-btn" data-tab="studyGroups">
+            <i class="fas fa-users"></i> Study Groups
+          </button>
+          <button class="tab-btn" data-tab="tutoring">
+            <i class="fas fa-chalkboard-teacher"></i> Tutoring
+          </button>
+        </div>
+
+        <!-- TAB: Study Materials -->
+        <div class="tab-content active" id="studyMaterials">
+          <div class="section-action mb-4">
+            <h2 style="font-size:1.25rem;font-weight:700;color:var(--gray-900);">Available Resources</h2>
+            <button class="btn btn-primary" id="uploadResourceBtn">
+              <i class="fas fa-upload"></i> Upload Resource
+            </button>
+          </div>
+          <div class="resources-grid">
+            <div class="resource-card animate-on-scroll">
+              <div class="resource-icon" style="background:linear-gradient(135deg,#4f46e5,#7c3aed);">
+                <i class="fas fa-square-root-alt"></i>
+              </div>
+              <div class="resource-info">
+                <span class="badge badge-primary" style="margin-bottom:0.4rem;">Mathematics</span>
+                <h4>Calculus Past Papers 2019–2023</h4>
+                <div class="resource-type">Past Papers</div>
+                <div class="resource-downloads"><i class="fas fa-download"></i> 1,234 downloads</div>
+              </div>
+              <button class="btn btn-sm btn-outline">Download</button>
+            </div>
+            <div class="resource-card animate-on-scroll">
+              <div class="resource-icon" style="background:linear-gradient(135deg,#06b6d4,#0891b2);">
+                <i class="fas fa-code"></i>
+              </div>
+              <div class="resource-info">
+                <span class="badge badge-secondary" style="margin-bottom:0.4rem;">Computer Science</span>
+                <h4>Data Structures &amp; Algorithms Notes</h4>
+                <div class="resource-type">Lecture Notes</div>
+                <div class="resource-downloads"><i class="fas fa-download"></i> 987 downloads</div>
+              </div>
+              <button class="btn btn-sm btn-outline">Download</button>
+            </div>
+            <div class="resource-card animate-on-scroll">
+              <div class="resource-icon" style="background:linear-gradient(135deg,#10b981,#059669);">
+                <i class="fas fa-cogs"></i>
+              </div>
+              <div class="resource-info">
+                <span class="badge badge-success" style="margin-bottom:0.4rem;">Engineering</span>
+                <h4>Engineering Thermodynamics Guide</h4>
+                <div class="resource-type">Study Guide</div>
+                <div class="resource-downloads"><i class="fas fa-download"></i> 756 downloads</div>
+              </div>
+              <button class="btn btn-sm btn-outline">Download</button>
+            </div>
+            <div class="resource-card animate-on-scroll">
+              <div class="resource-icon" style="background:linear-gradient(135deg,#f59e0b,#d97706);">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <div class="resource-info">
+                <span class="badge badge-warning" style="margin-bottom:0.4rem;">Business</span>
+                <h4>Financial Accounting Revision Kit</h4>
+                <div class="resource-type">Revision Kit</div>
+                <div class="resource-downloads"><i class="fas fa-download"></i> 623 downloads</div>
+              </div>
+              <button class="btn btn-sm btn-outline">Download</button>
+            </div>
+            <div class="resource-card animate-on-scroll">
+              <div class="resource-icon" style="background:linear-gradient(135deg,#ef4444,#dc2626);">
+                <i class="fas fa-heartbeat"></i>
+              </div>
+              <div class="resource-info">
+                <span class="badge badge-danger" style="margin-bottom:0.4rem;">Medicine</span>
+                <h4>Anatomy &amp; Physiology Notes Yr2</h4>
+                <div class="resource-type">Lecture Notes</div>
+                <div class="resource-downloads"><i class="fas fa-download"></i> 542 downloads</div>
+              </div>
+              <button class="btn btn-sm btn-outline">Download</button>
+            </div>
+            <div class="resource-card animate-on-scroll">
+              <div class="resource-icon" style="background:linear-gradient(135deg,#8b5cf6,#6d28d9);">
+                <i class="fas fa-balance-scale"></i>
+              </div>
+              <div class="resource-info">
+                <span class="badge badge-primary" style="margin-bottom:0.4rem;">Law</span>
+                <h4>Constitutional Law Past Papers</h4>
+                <div class="resource-type">Past Papers</div>
+                <div class="resource-downloads"><i class="fas fa-download"></i> 431 downloads</div>
+              </div>
+              <button class="btn btn-sm btn-outline">Download</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB: Study Groups -->
+        <div class="tab-content" id="studyGroups">
+          <div class="section-action mb-4">
+            <h2 style="font-size:1.25rem;font-weight:700;color:var(--gray-900);">Active Study Groups</h2>
+            <button class="btn btn-primary" onclick="alert('Create Study Group feature coming soon!')">
+              <i class="fas fa-plus"></i> Create Group
+            </button>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;">
+            <div class="card">
+              <div class="card-body">
+                <div style="display:flex;align-items:flex-start;gap:1rem;margin-bottom:1rem;">
+                  <div style="width:52px;height:52px;border-radius:12px;background:linear-gradient(135deg,#4f46e5,#7c3aed);display:flex;align-items:center;justify-content:center;color:white;font-size:1.2rem;flex-shrink:0;">
+                    <i class="fas fa-code"></i>
+                  </div>
+                  <div>
+                    <h3 style="font-size:1rem;font-weight:700;color:var(--gray-900);margin-bottom:0.2rem;">CS Algorithm Study Group</h3>
+                    <span class="badge badge-primary">Computer Science</span>
+                  </div>
+                </div>
+                <div style="display:flex;gap:1.5rem;font-size:0.85rem;color:var(--gray-500);margin-bottom:1.25rem;">
+                  <span><i class="fas fa-users" style="margin-right:0.3rem;"></i> 24 members</span>
+                  <span><i class="fas fa-circle" style="color:#10b981;font-size:0.6rem;margin-right:0.3rem;"></i> Very Active</span>
+                  <span><i class="fas fa-clock" style="margin-right:0.3rem;"></i> Meets Tues &amp; Thurs</span>
+                </div>
+                <p style="font-size:0.875rem;color:var(--gray-500);line-height:1.6;margin-bottom:1rem;">Focused on mastering algorithms and data structures for technical interviews and exams.</p>
+                <button class="btn btn-primary btn-full join-btn" data-joined="false">
+                  <i class="fas fa-user-plus"></i> Join Group
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <div style="display:flex;align-items:flex-start;gap:1rem;margin-bottom:1rem;">
+                  <div style="width:52px;height:52px;border-radius:12px;background:linear-gradient(135deg,#10b981,#059669);display:flex;align-items:center;justify-content:center;color:white;font-size:1.2rem;flex-shrink:0;">
+                    <i class="fas fa-calculator"></i>
+                  </div>
+                  <div>
+                    <h3 style="font-size:1rem;font-weight:700;color:var(--gray-900);margin-bottom:0.2rem;">Engineering Math Solvers</h3>
+                    <span class="badge badge-success">Mathematics</span>
+                  </div>
+                </div>
+                <div style="display:flex;gap:1.5rem;font-size:0.85rem;color:var(--gray-500);margin-bottom:1.25rem;">
+                  <span><i class="fas fa-users" style="margin-right:0.3rem;"></i> 18 members</span>
+                  <span><i class="fas fa-circle" style="color:#10b981;font-size:0.6rem;margin-right:0.3rem;"></i> Active</span>
+                  <span><i class="fas fa-clock" style="margin-right:0.3rem;"></i> Meets Mon &amp; Wed</span>
+                </div>
+                <p style="font-size:0.875rem;color:var(--gray-500);line-height:1.6;margin-bottom:1rem;">Engineering mathematics problem-solving sessions covering calculus, linear algebra, and differential equations.</p>
+                <button class="btn btn-primary btn-full join-btn" data-joined="false">
+                  <i class="fas fa-user-plus"></i> Join Group
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <div style="display:flex;align-items:flex-start;gap:1rem;margin-bottom:1rem;">
+                  <div style="width:52px;height:52px;border-radius:12px;background:linear-gradient(135deg,#f59e0b,#d97706);display:flex;align-items:center;justify-content:center;color:white;font-size:1.2rem;flex-shrink:0;">
+                    <i class="fas fa-briefcase"></i>
+                  </div>
+                  <div>
+                    <h3 style="font-size:1rem;font-weight:700;color:var(--gray-900);margin-bottom:0.2rem;">Business Case Study Team</h3>
+                    <span class="badge badge-warning">Business</span>
+                  </div>
+                </div>
+                <div style="display:flex;gap:1.5rem;font-size:0.85rem;color:var(--gray-500);margin-bottom:1.25rem;">
+                  <span><i class="fas fa-users" style="margin-right:0.3rem;"></i> 31 members</span>
+                  <span><i class="fas fa-circle" style="color:#10b981;font-size:0.6rem;margin-right:0.3rem;"></i> Very Active</span>
+                  <span><i class="fas fa-clock" style="margin-right:0.3rem;"></i> Meets Fri</span>
+                </div>
+                <p style="font-size:0.875rem;color:var(--gray-500);line-height:1.6;margin-bottom:1rem;">Preparing for business case competitions and finance-related academic challenges.</p>
+                <button class="btn btn-primary btn-full join-btn" data-joined="false">
+                  <i class="fas fa-user-plus"></i> Join Group
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <div style="display:flex;align-items:flex-start;gap:1rem;margin-bottom:1rem;">
+                  <div style="width:52px;height:52px;border-radius:12px;background:linear-gradient(135deg,#ef4444,#dc2626);display:flex;align-items:center;justify-content:center;color:white;font-size:1.2rem;flex-shrink:0;">
+                    <i class="fas fa-heartbeat"></i>
+                  </div>
+                  <div>
+                    <h3 style="font-size:1rem;font-weight:700;color:var(--gray-900);margin-bottom:0.2rem;">Pre-Med Study Circle</h3>
+                    <span class="badge badge-danger">Medicine</span>
+                  </div>
+                </div>
+                <div style="display:flex;gap:1.5rem;font-size:0.85rem;color:var(--gray-500);margin-bottom:1.25rem;">
+                  <span><i class="fas fa-users" style="margin-right:0.3rem;"></i> 15 members</span>
+                  <span><i class="fas fa-circle" style="color:#10b981;font-size:0.6rem;margin-right:0.3rem;"></i> Active</span>
+                  <span><i class="fas fa-clock" style="margin-right:0.3rem;"></i> Daily sessions</span>
+                </div>
+                <p style="font-size:0.875rem;color:var(--gray-500);line-height:1.6;margin-bottom:1rem;">Intensive medical studies group focusing on anatomy, physiology, and pharmacology.</p>
+                <button class="btn btn-primary btn-full join-btn" data-joined="false">
+                  <i class="fas fa-user-plus"></i> Join Group
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB: Tutoring -->
+        <div class="tab-content" id="tutoring">
+          <div class="section-action mb-4">
+            <h2 style="font-size:1.25rem;font-weight:700;color:var(--gray-900);">Available Tutors</h2>
+            <button class="btn btn-outline" onclick="alert('Become a tutor — feature coming soon!')">
+              <i class="fas fa-chalkboard-teacher"></i> Become a Tutor
+            </button>
+          </div>
+          <div class="tutors-grid">
+            <div class="tutor-card animate-on-scroll">
+              <div class="tutor-avatar">PM</div>
+              <div class="tutor-info">
+                <h4>Peter Mwangi</h4>
+                <div class="tutor-subject">Mathematics &amp; Statistics</div>
+                <div class="tutor-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 4.9 (47 reviews)</div>
+                <div class="tutor-rate">KSh 500 / hour</div>
+              </div>
+              <button class="btn btn-primary btn-sm book-btn">Book</button>
+            </div>
+            <div class="tutor-card animate-on-scroll">
+              <div class="tutor-avatar" style="background:linear-gradient(135deg,#06b6d4,#0891b2);">GW</div>
+              <div class="tutor-info">
+                <h4>Grace Wanjiru</h4>
+                <div class="tutor-subject">Computer Science</div>
+                <div class="tutor-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 4.8 (63 reviews)</div>
+                <div class="tutor-rate">KSh 600 / hour</div>
+              </div>
+              <button class="btn btn-primary btn-sm book-btn">Book</button>
+            </div>
+            <div class="tutor-card animate-on-scroll">
+              <div class="tutor-avatar" style="background:linear-gradient(135deg,#10b981,#059669);">JK</div>
+              <div class="tutor-info">
+                <h4>James Kariuki</h4>
+                <div class="tutor-subject">Engineering</div>
+                <div class="tutor-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> 4.7 (38 reviews)</div>
+                <div class="tutor-rate">KSh 450 / hour</div>
+              </div>
+              <button class="btn btn-primary btn-sm book-btn">Book</button>
+            </div>
+            <div class="tutor-card animate-on-scroll">
+              <div class="tutor-avatar" style="background:linear-gradient(135deg,#f59e0b,#d97706);">AN</div>
+              <div class="tutor-info">
+                <h4>Aisha Noor</h4>
+                <div class="tutor-subject">Business &amp; Economics</div>
+                <div class="tutor-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 4.9 (52 reviews)</div>
+                <div class="tutor-rate">KSh 550 / hour</div>
+              </div>
+              <button class="btn btn-primary btn-sm book-btn">Book</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo"><i class="fas fa-graduation-cap"></i> Campus Link</a>
+          <p>Connecting university students with resources, opportunities, and each other across Kenya and Africa.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Platform</h4>
+          <ul>
+            <li><a href="resources.html">Academic Resources</a></li>
+            <li><a href="careers.html">Career Opportunities</a></li>
+            <li><a href="networking.html">Student Network</a></li>
+            <li><a href="companies.html">For Companies</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="universities.html">Universities</a></li>
+            <li><a href="help.html">Help Center</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Contact</h4>
+          <ul>
+            <li><i class="fas fa-envelope"></i> hello@campuslink.co.ke</li>
+            <li><i class="fas fa-phone"></i> +254 700 123 456</li>
+            <li><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Campus Link. All rights reserved.</p>
+        <div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- UPLOAD MODAL -->
+  <div class="modal-overlay" id="uploadModal">
+    <div class="modal" style="max-width:520px;">
+      <button class="modal-close" id="closeUploadModal" aria-label="Close"><i class="fas fa-times"></i></button>
+      <div class="modal-header">
+        <i class="fas fa-upload modal-logo-icon"></i>
+        <h2>Upload Resource</h2>
+        <p>Share study materials with your fellow students</p>
+      </div>
+      <form class="modal-form" onsubmit="event.preventDefault();alert('Resource uploaded successfully! It will be reviewed before publishing.');document.getElementById('uploadModal').classList.remove('active');">
+        <div class="form-group">
+          <label>Resource Title</label>
+          <input type="text" placeholder="e.g., Calculus Past Papers 2023" required>
+        </div>
+        <div class="form-group">
+          <label>Subject / Course</label>
+          <input type="text" placeholder="e.g., Mathematics, Computer Science">
+        </div>
+        <div class="form-group">
+          <label>Resource Type</label>
+          <select>
+            <option value="">Select type</option>
+            <option>Past Papers</option>
+            <option>Lecture Notes</option>
+            <option>Study Guide</option>
+            <option>Revision Kit</option>
+            <option>Assignment</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Description</label>
+          <textarea placeholder="Brief description of what this resource covers..."></textarea>
+        </div>
+        <div class="form-group">
+          <label>Upload File</label>
+          <div class="file-upload-area">
+            <i class="fas fa-cloud-upload-alt"></i>
+            <p>Drag and drop your file here, or <strong style="color:var(--primary);">browse</strong></p>
+            <p style="font-size:0.8rem;color:var(--gray-400);margin-top:0.5rem;">PDF, DOCX, PPT up to 20MB</p>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">
+          <i class="fas fa-upload"></i> Upload Resource
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- LOGIN MODAL -->
+  <div class="modal-overlay" id="loginModal">
+    <div class="modal">
+      <button class="modal-close" id="closeLoginModal" aria-label="Close"><i class="fas fa-times"></i></button>
+      <div class="modal-header">
+        <i class="fas fa-graduation-cap modal-logo-icon"></i>
+        <h2>Welcome Back</h2>
+        <p>Sign in to your Campus Link account</p>
+      </div>
+      <form class="modal-form" id="loginForm" novalidate>
+        <div class="form-group">
+          <label for="loginEmail">Email Address</label>
+          <input type="email" id="loginEmail" placeholder="demo@campuslink.com" required>
+        </div>
+        <div class="form-group">
+          <label for="loginPassword">Password</label>
+          <input type="password" id="loginPassword" placeholder="demo123" required>
+        </div>
+        <div class="form-error" id="loginError"></div>
+        <button type="submit" class="btn btn-primary btn-full"><i class="fas fa-sign-in-alt"></i> Sign In</button>
+        <p class="modal-switch">Don't have an account? <a href="#" id="switchToSignup">Sign Up</a></p>
+        <p class="demo-hint"><i class="fas fa-info-circle"></i> Demo: demo@campuslink.com / demo123</p>
+      </form>
+    </div>
+  </div>
+
+  <!-- SIGNUP MODAL -->
+  <div class="modal-overlay" id="signupModal">
+    <div class="modal">
+      <button class="modal-close" id="closeSignupModal" aria-label="Close"><i class="fas fa-times"></i></button>
+      <div class="modal-header">
+        <i class="fas fa-graduation-cap modal-logo-icon"></i>
+        <h2>Join Campus Link</h2>
+        <p>Create your free student account</p>
+      </div>
+      <form class="modal-form" id="signupForm" novalidate>
+        <div class="form-group">
+          <label for="signupName">Full Name</label>
+          <input type="text" id="signupName" placeholder="Your full name" required>
+        </div>
+        <div class="form-group">
+          <label for="signupEmail">Email Address</label>
+          <input type="email" id="signupEmail" placeholder="student@university.ac.ke" required>
+        </div>
+        <div class="form-group">
+          <label for="signupUniversity">University</label>
+          <select id="signupUniversity">
+            <option value="">Select your university</option>
+            <option>University of Nairobi</option><option>Strathmore University</option>
+            <option>JKUAT</option><option>Kenyatta University</option>
+            <option>Moi University</option><option>Egerton University</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="signupPassword">Password</label>
+          <input type="password" id="signupPassword" placeholder="Min 6 characters" required>
+        </div>
+        <div class="form-error" id="signupError"></div>
+        <button type="submit" class="btn btn-primary btn-full"><i class="fas fa-user-plus"></i> Create Account</button>
+        <p class="modal-switch">Already have an account? <a href="#" id="switchToLogin">Sign In</a></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>

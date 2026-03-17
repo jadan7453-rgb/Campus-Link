@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Help Center - Campus Link</title>
+  <meta name="description" content="Get help with Campus Link. Find answers to frequently asked questions, contact support, or chat with us live.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo"><i class="fas fa-graduation-cap"></i> Campus Link</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="resources.html" class="nav-link">Resources</a></li>
+        <li><a href="careers.html" class="nav-link">Careers</a></li>
+        <li><a href="networking.html" class="nav-link">Networking</a></li>
+        <li><a href="companies.html" class="nav-link">Companies</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="help.html" class="nav-link">Help</a></li>
+      </ul>
+      <div class="nav-auth" id="navAuth">
+        <button class="btn btn-outline" id="loginBtn">Login</button>
+        <button class="btn btn-primary" id="signupBtn">Sign Up</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="page-hero" style="padding:5rem 0 4rem;">
+    <div class="page-hero-content">
+      <div class="badge badge-primary mb-3"><i class="fas fa-life-ring"></i> Support</div>
+      <h1>Help Center</h1>
+      <p>Find answers quickly or reach out to our friendly support team</p>
+      <div class="search-bar hero-search" style="margin-top:1.5rem;max-width:500px;margin-left:auto;margin-right:auto;">
+        <input type="text" id="helpSearch" placeholder="Search for help topics...">
+        <button><i class="fas fa-search"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUPPORT CATEGORIES -->
+  <section style="background:var(--gray-50);">
+    <div class="container">
+      <div class="section-header">
+        <h2>How Can We Help?</h2>
+        <p>Browse our support categories to find what you need</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;" class="support-grid">
+        <div class="feature-card animate-on-scroll" style="text-align:center;cursor:pointer;" onclick="document.getElementById('faq').scrollIntoView({behavior:'smooth'})">
+          <div class="feature-icon"><i class="fas fa-laptop"></i></div>
+          <h3>Technical Support</h3>
+          <p>Browser issues, app problems, loading errors, and technical troubleshooting.</p>
+          <a href="#faq" class="btn btn-outline" style="margin-top:0.75rem;">Get Help</a>
+        </div>
+        <div class="feature-card animate-on-scroll" style="text-align:center;cursor:pointer;" onclick="document.getElementById('faq').scrollIntoView({behavior:'smooth'})">
+          <div class="feature-icon" style="background:linear-gradient(135deg,#7c3aed,#6d28d9);"><i class="fas fa-user-circle"></i></div>
+          <h3>Account Help</h3>
+          <p>Login issues, password reset, profile management, and account settings.</p>
+          <a href="#faq" class="btn btn-outline" style="margin-top:0.75rem;">Get Help</a>
+        </div>
+        <div class="feature-card animate-on-scroll" style="text-align:center;cursor:pointer;" onclick="document.getElementById('faq').scrollIntoView({behavior:'smooth'})">
+          <div class="feature-icon" style="background:linear-gradient(135deg,#06b6d4,#0891b2);"><i class="fas fa-question-circle"></i></div>
+          <h3>General Inquiries</h3>
+          <p>Platform features, partnerships, general questions, and feature requests.</p>
+          <a href="#faq" class="btn btn-outline" style="margin-top:0.75rem;">Get Help</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" style="background:white;">
+    <div class="container" style="max-width:800px;">
+      <div class="section-header">
+        <h2>Frequently Asked Questions</h2>
+        <p>Answers to the most common questions from our community</p>
+      </div>
+      <div class="accordion">
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span><i class="fas fa-user-plus" style="color:var(--primary);margin-right:0.75rem;"></i>How do I create a Campus Link account?</span>
+            <i class="fas fa-chevron-down accordion-icon"></i>
+          </button>
+          <div class="accordion-content">
+            <p>Creating a Campus Link account is completely free and takes less than 2 minutes! Simply click the <strong>Sign Up</strong> button in the top navigation, enter your full name, student email address, select your university, and create a password. Once you verify your email, you'll have full access to all Campus Link features including resources, internships, networking, and more.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span><i class="fas fa-gift" style="color:var(--primary);margin-right:0.75rem;"></i>Is Campus Link free to use for students?</span>
+            <i class="fas fa-chevron-down accordion-icon"></i>
+          </button>
+          <div class="accordion-content">
+            <p>Yes! Campus Link is <strong>100% free</strong> for all university students. You can access academic resources, browse internships and scholarships, connect with other students, join study groups, and use all core platform features at no cost. We believe every student deserves equal access to opportunities regardless of their financial background.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span><i class="fas fa-briefcase" style="color:var(--primary);margin-right:0.75rem;"></i>How do I find internships on Campus Link?</span>
+            <i class="fas fa-chevron-down accordion-icon"></i>
+          </button>
+          <div class="accordion-content">
+            <p>Visit the <a href="careers.html" style="color:var(--primary);">Careers page</a> and browse the <strong>Internships</strong> tab to see all available opportunities. Use the filter sidebar on the left to narrow results by location (Nairobi, Remote, etc.), field of study, salary range, and posting date. You can also use the search bar to find internships by company name, role, or required skills. Click "Apply Now" on any listing to submit your application.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span><i class="fas fa-upload" style="color:var(--primary);margin-right:0.75rem;"></i>Can I upload my own study materials to share?</span>
+            <i class="fas fa-chevron-down accordion-icon"></i>
+          </button>
+          <div class="accordion-content">
+            <p>Absolutely! Campus Link encourages students to share their notes and study materials with the community. Go to the <a href="resources.html" style="color:var(--primary);">Resources page</a> and click the <strong>Upload Resource</strong> button. You can upload PDFs, Word documents, and PowerPoint files up to 20MB. All uploads are reviewed by our moderation team before being published to ensure quality and appropriateness.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span><i class="fas fa-users" style="color:var(--primary);margin-right:0.75rem;"></i>How does the student networking feature work?</span>
+            <i class="fas fa-chevron-down accordion-icon"></i>
+          </button>
+          <div class="accordion-content">
+            <p>The <a href="networking.html" style="color:var(--primary);">Networking page</a> lets you browse student profiles from universities across Kenya. Click <strong>Connect</strong> on any profile to send a connection request. Once accepted, you can message each other directly. You can also join academic communities (like the CS Hub or Business Network), participate in discussion forums, join study groups, and RSVP to events — all in one place.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span><i class="fas fa-shield-alt" style="color:var(--primary);margin-right:0.75rem;"></i>Are the scholarships on Campus Link legitimate?</span>
+            <i class="fas fa-chevron-down accordion-icon"></i>
+          </button>
+          <div class="accordion-content">
+            <p>Yes. Every scholarship listed on Campus Link is <strong>manually verified</strong> by our team before being published. We check that the provider is a legitimate organization, the application process is transparent, and there are no hidden fees. We work directly with companies, foundations, and government bodies to source authentic scholarship opportunities. If you ever suspect a fraudulent listing, please report it immediately using the report button.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span><i class="fas fa-flag" style="color:var(--primary);margin-right:0.75rem;"></i>How do I report inappropriate content or behaviour?</span>
+            <i class="fas fa-chevron-down accordion-icon"></i>
+          </button>
+          <div class="accordion-content">
+            <p>Campus Link has a zero-tolerance policy for harassment, spam, and inappropriate content. To report any content, click the <strong>three-dot menu</strong> (⋮) on any post, resource, profile, or message and select "Report". Alternatively, email us directly at <a href="mailto:report@campuslink.co.ke" style="color:var(--primary);">report@campuslink.co.ke</a>. All reports are handled confidentially and our team responds within 24 hours.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span><i class="fas fa-building" style="color:var(--primary);margin-right:0.75rem;"></i>How do companies post jobs on Campus Link?</span>
+            <i class="fas fa-chevron-down accordion-icon"></i>
+          </button>
+          <div class="accordion-content">
+            <p>Companies and recruiters can create a free recruiter account on Campus Link. Visit our <a href="companies.html" style="color:var(--primary);">Companies page</a> and click <strong>Create Recruiter Account</strong>. Once verified, you can post internship and job listings, search student profiles by skills and university, and engage directly with top student talent. For enterprise partnerships, contact us at <a href="mailto:partners@campuslink.co.ke" style="color:var(--primary);">partners@campuslink.co.ke</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SUPPORT -->
+  <section style="background:var(--gray-50);">
+    <div class="container" style="max-width:700px;">
+      <div class="section-header">
+        <h2>Contact Support</h2>
+        <p>Can't find what you're looking for? Our team is here to help!</p>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <form id="supportForm" onsubmit="event.preventDefault();this.reset();document.getElementById('supportSuccess').style.display='block';setTimeout(()=>document.getElementById('supportSuccess').style.display='none',4000);">
+            <div id="supportSuccess" style="display:none;background:#ecfdf5;border:1px solid #a7f3d0;border-radius:var(--radius-sm);padding:1rem;margin-bottom:1.25rem;color:#065f46;font-size:0.875rem;text-align:center;">
+              <i class="fas fa-check-circle"></i> Message sent! We'll get back to you within 24 hours.
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;" class="form-two-col">
+              <div class="form-group">
+                <label>Your Name</label>
+                <input type="text" placeholder="Full name" required>
+              </div>
+              <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" placeholder="you@email.com" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Category</label>
+              <select required>
+                <option value="">Select a category</option>
+                <option>Technical Support</option>
+                <option>Account Help</option>
+                <option>Billing / Payments</option>
+                <option>Report Content</option>
+                <option>Partnership Inquiry</option>
+                <option>General Question</option>
+                <option>Feature Request</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Subject</label>
+              <input type="text" placeholder="Brief description of your issue">
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <textarea rows="5" placeholder="Please describe your issue in detail. Include any error messages or steps to reproduce the problem." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+            <p style="font-size:0.8rem;color:var(--gray-400);text-align:center;margin-top:0.75rem;">
+              <i class="fas fa-clock"></i> We typically respond within 24 hours on business days
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo"><i class="fas fa-graduation-cap"></i> Campus Link</a>
+          <p>Connecting university students with resources, opportunities, and each other across Kenya and Africa.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Platform</h4>
+          <ul>
+            <li><a href="resources.html">Academic Resources</a></li>
+            <li><a href="careers.html">Career Opportunities</a></li>
+            <li><a href="networking.html">Student Network</a></li>
+            <li><a href="companies.html">For Companies</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="universities.html">Universities</a></li>
+            <li><a href="help.html">Help Center</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Contact</h4>
+          <ul>
+            <li><i class="fas fa-envelope"></i> hello@campuslink.co.ke</li>
+            <li><i class="fas fa-phone"></i> +254 700 123 456</li>
+            <li><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Campus Link. All rights reserved.</p>
+        <div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LIVE CHAT BUTTON -->
+  <button class="live-chat-btn" onclick="alert('Live chat is available Monday–Friday 8AM–6PM EAT. For urgent help, email hello@campuslink.co.ke')">
+    <i class="fas fa-comment"></i>
+    <span>Live Chat</span>
+  </button>
+
+  <!-- LOGIN MODAL -->
+  <div class="modal-overlay" id="loginModal">
+    <div class="modal">
+      <button class="modal-close" id="closeLoginModal" aria-label="Close"><i class="fas fa-times"></i></button>
+      <div class="modal-header"><i class="fas fa-graduation-cap modal-logo-icon"></i><h2>Welcome Back</h2><p>Sign in to your Campus Link account</p></div>
+      <form class="modal-form" id="loginForm" novalidate>
+        <div class="form-group"><label for="loginEmail">Email Address</label><input type="email" id="loginEmail" placeholder="demo@campuslink.com" required></div>
+        <div class="form-group"><label for="loginPassword">Password</label><input type="password" id="loginPassword" placeholder="demo123" required></div>
+        <div class="form-error" id="loginError"></div>
+        <button type="submit" class="btn btn-primary btn-full"><i class="fas fa-sign-in-alt"></i> Sign In</button>
+        <p class="modal-switch">Don't have an account? <a href="#" id="switchToSignup">Sign Up</a></p>
+        <p class="demo-hint"><i class="fas fa-info-circle"></i> Demo: demo@campuslink.com / demo123</p>
+      </form>
+    </div>
+  </div>
+  <!-- SIGNUP MODAL -->
+  <div class="modal-overlay" id="signupModal">
+    <div class="modal">
+      <button class="modal-close" id="closeSignupModal" aria-label="Close"><i class="fas fa-times"></i></button>
+      <div class="modal-header"><i class="fas fa-graduation-cap modal-logo-icon"></i><h2>Join Campus Link</h2><p>Create your free student account</p></div>
+      <form class="modal-form" id="signupForm" novalidate>
+        <div class="form-group"><label for="signupName">Full Name</label><input type="text" id="signupName" placeholder="Your full name" required></div>
+        <div class="form-group"><label for="signupEmail">Email Address</label><input type="email" id="signupEmail" placeholder="student@university.ac.ke" required></div>
+        <div class="form-group"><label for="signupUniversity">University</label><select id="signupUniversity"><option value="">Select your university</option><option>University of Nairobi</option><option>Strathmore University</option><option>JKUAT</option><option>Kenyatta University</option><option>Moi University</option><option>Egerton University</option></select></div>
+        <div class="form-group"><label for="signupPassword">Password</label><input type="password" id="signupPassword" placeholder="Min 6 characters" required></div>
+        <div class="form-error" id="signupError"></div>
+        <button type="submit" class="btn btn-primary btn-full"><i class="fas fa-user-plus"></i> Create Account</button>
+        <p class="modal-switch">Already have an account? <a href="#" id="switchToLogin">Sign In</a></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/auth.js"></script>
+  <script>
+    const supportGrid = document.querySelector('.support-grid');
+    if (supportGrid && window.innerWidth <= 768) { supportGrid.style.gridTemplateColumns = '1fr'; }
+    window.addEventListener('resize', () => {
+      if (supportGrid) supportGrid.style.gridTemplateColumns = window.innerWidth <= 768 ? '1fr' : 'repeat(3,1fr)';
+    });
+    const formTwoCol = document.querySelector('.form-two-col');
+    if (formTwoCol && window.innerWidth <= 640) { formTwoCol.style.gridTemplateColumns = '1fr'; }
+    window.addEventListener('resize', () => {
+      if (formTwoCol) formTwoCol.style.gridTemplateColumns = window.innerWidth <= 640 ? '1fr' : '1fr 1fr';
+    });
+  </script>
+</body>
+</html>
